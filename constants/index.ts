@@ -1,5 +1,5 @@
 export const Skill_data = [
-
+    
   
   ];
   
@@ -12,73 +12,85 @@ export const Skill_data = [
   
   export const Frontend_skill = [
     {
-      skill_name: "Html 5",
+      skill_name: "HTML",
       Image: "/html.png",
       width: 80,
       height: 80,
     },
     {
-      skill_name: "Css",
+      skill_name: "CSS",
       Image: "/css.png",
       width: 80,
       height: 80,
     },
     {
-      skill_name: "Java Script",
-      Image: "/js.png",
-      width: 65,
-      height: 65,
+      skill_name: "Tailwind",
+      Image: "/tailwind.png",
+      width: 80,
+      height: 80,
     },
     {
-      skill_name: "Tailwind Css",
-      Image: "/tailwind.png",
+      skill_name: "JavaScript",
+      Image: "/js.png",
       width: 80,
       height: 80,
     },
     {
       skill_name: "React",
       Image: "/react.png",
-      width: 80,
+      width: 95,
       height: 80,
     },
     {
       skill_name: "Redux",
       Image: "/redux.png",
-      width: 80,
+      width: 87,
       height: 80,
     },
     {
-      skill_name: "Type Script",
+      skill_name: "TypeScript",
       Image: "/ts.png",
-      width: 80,
+      width: 85,
       height: 80,
     },
     {
-      skill_name: "Next js 13",
+      skill_name: "Next.JS",
       Image: "/next.png",
       width: 80,
       height: 80,
     },
+    {
+      skill_name: "PHP",
+      Image: "/php.png",
+      width: 120,
+      height: 80,
+    },
+    {
+      skill_name: "C#",
+      Image: "/csharp.png",
+      width: 80,
+      height: 80,
+    }
   ];
   
   export const Backend_skill = [
     {
-      skill_name: "Node js",
+      skill_name: "Node.JS",
       Image: "/node-js.png",
-      width: 80,
+      width: 65,
       height: 80,
     },
     {
-      skill_name: "Postger SQL",
+      skill_name: "PostgreSQL",
       Image: "/postger.png",
-      width: 70,
-      height: 70,
+      width: 75,
+      height: 80,
     },
     {
-      skill_name: "My SQL",
+      skill_name: "MySQL",
       Image: "/mysql.png",
-      width: 70,
-      height: 70,
+      width: 75,
+      height: 80,
     }
   ];
   
@@ -89,8 +101,13 @@ export const Skill_data = [
   
   
   export const Other_skill = [
+{
+      skill_name: "Git",
+      Image: "/git.png",
+      width: 80,
+      height: 80,
 
-  ];
+ } ];
   
   
   

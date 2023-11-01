@@ -30,28 +30,30 @@ const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Frontend_skill.map((image, index) => (
-          <SkillDataProvider
-            key={index}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
-            index={index}
-          />
-        ))}
-      </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {Backend_skill.map((image, index) => (
-          <SkillDataProvider
-            key={index}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
-            index={index}
-          />
-        ))}
-      </div>
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center skill-text skill-item">
+  {Frontend_skill.map((skill, index) => (
+    <SkillDataProvider
+      key={index}
+      src={skill.Image}
+      width={skill.width}
+      height={skill.height}
+      skillName={skill.skill_name} // Fügt den Namen hinzu
+      index={index}
+    />
+  ))}
+</div>
+<div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+  {Backend_skill.map((image, index) => (
+    <SkillDataProvider
+      key={index}
+      src={image.Image}
+      width={image.width}
+      height={image.height}
+      index={index} 
+      skillName={image.skill_name} // Hier skill_name direkt von image verwenden
+    />
+  ))}
+</div>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Full_stack.map((image, index) => (
           <SkillDataProvider
@@ -59,8 +61,9 @@ const Skills = () => {
             src={image.Image}
             width={image.width}
             height={image.height}
-            index={index}
-          />
+            index={index} 
+            skillName={image.skill_name}          
+            />
         ))}
       </div>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
@@ -71,6 +74,7 @@ const Skills = () => {
             width={image.width}
             height={image.height}
             index={index}
+            skillName={image.skill_name}
           />
         ))}
       </div>
