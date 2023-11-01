@@ -1,5 +1,4 @@
 export const Skill_data = [
-    
   
   ];
   
@@ -60,15 +59,15 @@ export const Skill_data = [
       height: 80,
     },
     {
-      skill_name: "PHP",
-      Image: "/php.png",
-      width: 120,
+      skill_name: "C#",
+      Image: "/csharp.png",
+      width: 85,
       height: 80,
     },
     {
-      skill_name: "C#",
-      Image: "/csharp.png",
-      width: 80,
+      skill_name: "Python",
+      Image: "/python.png",
+      width: 85,
       height: 80,
     }
   ];
@@ -89,6 +88,12 @@ export const Skill_data = [
     {
       skill_name: "MySQL",
       Image: "/mysql.png",
+      width: 75,
+      height: 80,
+    },
+    {
+      skill_name: "Playwright",
+      Image: "/playwright.svg",
       width: 75,
       height: 80,
     }
