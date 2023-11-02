@@ -37,3 +37,16 @@ export function slideInFromLeft(delay: number) {
       },
     },
   };
+
+  export const pulseAnimation = {
+    initial: {
+      scale: 1,
+    },
+    pulse: {
+      scale: 1.1, // 
+      transition: {
+        duration: 0.5,
+        yoyo: Infinity,
+      },
+    },
+  };
