@@ -84,5 +84,6 @@ html {
 }
 
 .linkedin-logo {
-  margin-top: 6px; /* Verschiebt nur das LinkedIn-Logo*/
+  margin-top: 2px; /* Verschiebt nur das LinkedIn-Logo*/
+  width: 40px;
 }

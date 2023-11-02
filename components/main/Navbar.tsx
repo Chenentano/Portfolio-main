@@ -1,8 +1,28 @@
+"use client";
+
 import { Socials } from "@/constants";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 const Navbar = () => {
+  const linkVariants = {
+    initial: {
+      opacity: 0,
+      x: -20,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    hover: {
+      scale: 1.1,
+      color: "#FFF9", // Ändern Sie die Farbe nach Ihren Wünschen
+    },
+  };
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
@@ -24,21 +44,49 @@ const Navbar = () => {
         </a>
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              Home
-            </a>
-            <a href="#skills" className="cursor-pointer">
-              Skills
-            </a>
-            <a href="#learning" className="cursor-pointer">
-              Lernprojekte
-            </a>
-            <a href="#certificates" className="cursor-pointer">
-              Zertifikate
-            </a>
-          </div>
-        </div>
+      <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[20px] rounded-full text-gray-200">
+        <motion.a
+          href="#about-me"
+          className="cursor-pointer"
+          variants={linkVariants}
+          initial="initial"
+          animate="animate"
+          whileHover="hover"
+        >
+          Home
+        </motion.a>
+        <motion.a
+          href="#skills"
+          className="cursor-pointer"
+          variants={linkVariants}
+          initial="initial"
+          animate="animate"
+          whileHover="hover"
+        >
+          Skills
+        </motion.a>
+        <motion.a
+          href="#learning"
+          className="cursor-pointer"
+          variants={linkVariants}
+          initial="initial"
+          animate="animate"
+          whileHover="hover"
+        >
+          Lernprojekte
+        </motion.a>
+        <motion.a
+          href="#certificates"
+          className="cursor-pointer"
+          variants={linkVariants}
+          initial="initial"
+          animate="animate"
+          whileHover="hover"
+        >
+          Zertifikate
+        </motion.a>
+      </div>
+    </div>
         <div className="flex flex-row gap-5">
       {Socials.map((social) => (
         <a
@@ -47,8 +95,14 @@ const Navbar = () => {
           rel="noopener noreferrer"
           key={social.name}
         >
-          <Image src={social.src} alt={social.name} width={40} height={24} 
-          className={social.name === "LinkedIn" ? "linkedin-logo" : ""} />
+          <motion.img
+            src={social.src}
+            alt={social.name}
+            width={35}
+            height={24}
+            className={social.name === "LinkedIn" ? "linkedin-logo" : ""}
+            whileHover={{ scale: 1.4, transition: { duration: 0.5 } }} // Beispiel-Animation für Hover
+          />
         </a>
       ))}
     </div>
