@@ -1,5 +1,5 @@
 import Hero from "@/components/main/Hero";
-import Projects from "@/components/main/Projects";
+import Certificates from "@/components/main/Certificates";
 import Skills from "@/components/main/Skills";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ export default function Home() {
         <Hero />
         <Skills />
         
-        <Projects />
+        <Certificates />
       </div>
     </main>
   );
