@@ -82,3 +82,7 @@ html {
   font-weight: bold;
   text-align: center;
 }
+
+.linkedin-logo {
+  margin-top: 6px; /* Verschiebt nur das LinkedIn-Logo*/
+}

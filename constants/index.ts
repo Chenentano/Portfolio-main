@@ -1,12 +1,18 @@
 export const Skill_data = [
-  
+ 
   ];
   
   export const Socials = [
     {
-      name: "Instagram",
-      src: "/discord.svg",
+      name: "LinkedIn",
+      src: "/linkedin.png",
+      link: "https://github.com/chenentano"
     },
+    {
+      name:"GitHub",
+      src: "/github.png",
+      link:"https://github.com/chenentano"
+    }
   ];
   
   export const Frontend_skill = [
