@@ -46,8 +46,8 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          Aktuell suche ich eine Junior-Position, in der ich mich
-          Entwickeln und meine Skills herausfordern kann!
+          Aktuell suche ich eine Junior-Position,
+          in der ich mich entwickeln und meine Skills herausfordern kann!
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
