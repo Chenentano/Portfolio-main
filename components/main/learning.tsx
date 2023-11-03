@@ -12,13 +12,12 @@ const goals: Goal[] = [
   { title: "C#/.NET Kurs (freeCodeCamp)", progress: 30 },
   { title: "Docker (freeCodeCamp)", progress: 10 },
   { title: "Clean Code von Robert C. Martin (Buch)", progress: 40 },
-  // Fügen Sie hier weitere Lernziele hinzu
 ];
 
 const Portfolio: React.FC = () => {
   return (
     <div className="container mx-auto py-8" id="learning">
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-cyan-600 py-20 text-center">Aktuellen Lernprojekte</h1>
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-cyan-600 py-20 text-center">Aktuelle Lernziele</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         {goals.map((goal, index) => (
           <PortfolioItem key={index} goal={goal} />

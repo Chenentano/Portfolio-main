@@ -28,6 +28,7 @@ const FloatingLink = () => {
       animate={controls}
       className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
       href="https://docdro.id/1jD8lF2"
+      variants={slideInFromLeft(0.5)}
     >
       Mein Lebenslauf
     </motion.a>
@@ -48,21 +49,20 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Motivierter
+            Bastian Behrendt
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
-              Junior Developer{" "}
+              <br></br>Junior Developer{" "}
             </span>
-            sucht Herausforderung
           </span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-gray-400 my-5 max-w-[600px] font-bold"
         >
-          Aktuell suche ich nach einer Junior-Position,
-          in der ich mich entwickeln und meine Skills herausfordern kann!
+Derzeit bin ich aktiv auf der Suche nach einer Junior-Position, die mir die Möglichkeit bietet, 
+mich weiterzuentwickeln und meine Fähigkeiten in einem anspruchsvollen Umfeld unter Beweis zu stellen.
         </motion.p>
 
         <FloatingLink /> {/* Hier wird die FloatingLink-Komponente eingefügt */}
