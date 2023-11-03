@@ -42,7 +42,7 @@ const Certificates = () => {
                 transition={{ duration: 1 }}
               >
                 <ProjectCard
-                  src={"/ihk_small.png"}
+                  src={"/IHK_small.png"}
                   title="FIA - IHK"
                   description="Bestandene Ausbildung"
                 />
