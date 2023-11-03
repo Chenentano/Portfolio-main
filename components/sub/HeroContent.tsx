@@ -1,14 +1,38 @@
-"use client";
-
-import React from "react";
-import { motion } from "framer-motion";
+"use client"
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import {
   slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
+  slideInFromRight
 } from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+
+const FloatingLink = () => {
+  const floatingAnimation = {
+    y: [0, 10, 0],
+    transition: {
+      duration: 3,
+      repeat: Infinity, // Endlosschleife
+    },
+  };
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start(floatingAnimation);
+  }, [controls]);
+
+  return (
+    <motion.a
+      custom={1} // Benutzerdefinierter Wert, um die Animation zu steuern
+      animate={controls}
+      className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+      href="https://docdro.id/1jD8lF2"
+    >
+      Mein Lebenslauf
+    </motion.a>
+  );
+};
 
 const HeroContent = () => {
   return (
@@ -40,13 +64,8 @@ const HeroContent = () => {
           Aktuell suche ich nach einer Junior-Position,
           in der ich mich entwickeln und meine Skills herausfordern kann!
         </motion.p>
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-          href="https://docdro.id/1jD8lF2"
-        >
-          Mein Lebenslauf
-        </motion.a>
+
+        <FloatingLink /> {/* Hier wird die FloatingLink-Komponente eingefügt */}
       </div>
 
       <motion.div
