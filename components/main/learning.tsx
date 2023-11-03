@@ -56,7 +56,9 @@ const PortfolioItem: React.FC<{ goal: Goal }> = ({ goal }) => {
           ></motion.div>
         </div>
       </div>
+      
     </motion.div>
+    
   );
 };
 
