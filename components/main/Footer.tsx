@@ -12,7 +12,7 @@ const footer = () => {
     <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] text-center ">
       <div className="container mx-auto">
         <p>&copy; {new Date().getFullYear()} Bastian B.</p>
-        <p>Kontakt: chenentano@yahoo.com</p>
+        <p>Kontakt: bastian_behrendt@yahoo.de</p>
       </div>
     </div>
   )

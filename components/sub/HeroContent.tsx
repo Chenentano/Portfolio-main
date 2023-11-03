@@ -27,7 +27,8 @@ const FloatingLink = () => {
       custom={1} // Benutzerdefinierter Wert, um die Animation zu steuern
       animate={controls}
       className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-      href="https://docdro.id/1jD8lF2"
+      href="https://docdro.id/BBK0A1c"
+      target="_blank"
       variants={slideInFromLeft(0.5)}
     >
       Mein Lebenslauf
