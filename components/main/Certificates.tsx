@@ -4,9 +4,6 @@ import ProjectCard from "../sub/CertificatesCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 // Importieren Sie die Bilder und definieren Sie die gewünschten Abmessungen
-import IHK_small from "../../public/IHK_small.png";
-import full from "../../public/full.png";
-import hacking from "../../public/hacking.png";
 
 const Certificates = () => {
   const [ref, inView] = useInView({
@@ -25,40 +22,40 @@ const Certificates = () => {
       >
         {inView ? (
           <>
-            <a href="google.de"> {/* Add your link URL inside the href attribute */}
+            <a href="#"> 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2.5 }}
               >
                 <ProjectCard
-                  src={full}
+                  src={"/full.png"}
                   title="Full-Stack Engineer"
                   description="6-monatiges Zertifikat während der Elternzeit"
                 />
               </motion.div>
             </a>
-            <a href="your_link_url_here"> {/* Add your link URL inside the href attribute */}
+            <a href="#"> 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
                 <ProjectCard
-                  src={IHK_small}
+                  src={"/ihk_small.png"}
                   title="FIA - IHK"
                   description="Bestandene Ausbildung"
                 />
               </motion.div>
             </a>
-            <a href="your_link_url_here"> {/* Add your link URL inside the href attribute */}
+            <a href="#"> 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
                 <ProjectCard
-                  src={hacking}
+                  src={"/hacking.png"}
                   title="Ethical Hacking Basics"
                   description="Basiswissen über Sicherheitslücken und Hacking"
                 />
