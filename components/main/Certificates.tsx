@@ -23,41 +23,47 @@ const Certificates = () => {
         ref={ref}
         className="w-full max-w-screen-xl mx-auto flex flex-col md:flex-row gap-10 px-10 items-center"
       >
-        {inView ? ( // Fügen Sie die Bedingung hinzu, um die Animation nur anzuzeigen, wenn die Elemente sichtbar sind
+        {inView ? (
           <>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2.5 }}
-            >
-              <ProjectCard
-                src={full}
-                title="Full-Stack Engineer"
-                description="6-monatiges Zertifikat während der Elternzeit"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <ProjectCard
-                src={IHK_small}
-                title="FIA - IHK"
-                description="Bestandene Ausbildung"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <ProjectCard
-                src={hacking}
-                title="Ethical Hacking Basics"
-                description="Basiswissen über Sicherheitslücken und Hacking"
-              />
-            </motion.div>
+            <a href="google.de"> {/* Add your link URL inside the href attribute */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2.5 }}
+              >
+                <ProjectCard
+                  src={full}
+                  title="Full-Stack Engineer"
+                  description="6-monatiges Zertifikat während der Elternzeit"
+                />
+              </motion.div>
+            </a>
+            <a href="your_link_url_here"> {/* Add your link URL inside the href attribute */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                <ProjectCard
+                  src={IHK_small}
+                  title="FIA - IHK"
+                  description="Bestandene Ausbildung"
+                />
+              </motion.div>
+            </a>
+            <a href="your_link_url_here"> {/* Add your link URL inside the href attribute */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                <ProjectCard
+                  src={hacking}
+                  title="Ethical Hacking Basics"
+                  description="Basiswissen über Sicherheitslücken und Hacking"
+                />
+              </motion.div>
+            </a>
           </>
         ) : null}
       </div>

@@ -6,7 +6,7 @@ export const Skill_data = [
     {
       name: "LinkedIn",
       src: "/linkedin.png",
-      link: "https://github.com/chenentano"
+      link: "https://www.linkedin.com/in/bastian-behrendt-92904b1b4/"
     },
     {
       name:"GitHub",
