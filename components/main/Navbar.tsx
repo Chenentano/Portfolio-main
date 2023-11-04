@@ -30,6 +30,7 @@ const Navbar = () => {
           href="#home"
           className="h-auto w-auto flex flex-row items-center"
         >
+          <div className="my-rotation">
           <Image
             src="/LockMain.png"
             alt="logo"
@@ -37,7 +38,7 @@ const Navbar = () => {
             height={70}
             className="cursor-pointer hover:animate-slowspin"
           />
-
+          </div>
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
             Bastian B.
           </span>

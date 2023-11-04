@@ -88,6 +88,14 @@ html {
   width: 40px;
 }
 
-.scaling{
-    
+@keyframes my-rotation{
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
+
+.my-rotation{
+  animation: my-rotation 9s linear infinite;
 }
