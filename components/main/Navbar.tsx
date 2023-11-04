@@ -39,9 +39,9 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
           </div>
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            Bastian B.
-          </span>
+          <div className="typewriter">
+            <h1>Bastian Behrendt</h1>
+          </div>
         </a>
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
