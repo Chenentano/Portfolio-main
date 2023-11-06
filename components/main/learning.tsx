@@ -9,7 +9,7 @@ interface Goal {
 }
 
 const goals: Goal[] = [
-  { title: "C#/.NET Kurs (freeCodeCamp)", progress: 30 },
+  { title: "C#/.NET Kurs (freeCodeCamp)", progress: 70 },
   { title: "Docker (freeCodeCamp)", progress: 10 },
   { title: "Clean Code von Robert C. Martin (Buch)", progress: 40 },
 ];
