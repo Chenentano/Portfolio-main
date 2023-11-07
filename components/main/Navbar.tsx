@@ -40,7 +40,7 @@ const Navbar = () => {
           />
           </div>
           <div className="typewriter">
-            <h1>Bastian Behrendt</h1>
+            <h1>&#60;helloWorld/&#62;</h1>
           </div>
         </a>
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
