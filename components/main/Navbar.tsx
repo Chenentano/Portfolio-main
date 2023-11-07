@@ -43,7 +43,6 @@ const Navbar = () => {
             <h1>Bastian Behrendt</h1>
           </div>
         </a>
-
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
       <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[20px] rounded-full text-gray-200">
         <motion.a

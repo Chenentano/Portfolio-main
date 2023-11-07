@@ -27,7 +27,7 @@ const FloatingLink = () => {
       custom={1} // Benutzerdefinierter Wert, um die Animation zu steuern
       animate={controls}
       className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-      href="https://docdro.id/scF3QFn"
+      href="https://www.docdroid.net/scF3QFn"
       target="_blank"
       variants={slideInFromLeft(0.5)}
     >
@@ -60,7 +60,7 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px] font-bold"
+          className="text-lg text-gray-100 my-5 max-w-[600px] font-bold"
         >
 Derzeit bin ich aktiv auf der Suche nach einer Junior-Position, die mir die Möglichkeit bietet, 
 mich weiterzuentwickeln und meine Fähigkeiten in einem anspruchsvollen Umfeld unter Beweis zu stellen.
