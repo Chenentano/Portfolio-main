@@ -65,12 +65,6 @@ export const Skill_data = [
       height: 80,
     },
     {
-      skill_name: "Framer",
-      Image: "/framer_new.svg",
-      width: 82,
-      height: 80,
-    },
-    {
       skill_name: "Python",
       Image: "/python_new.svg",
       width: 83,
@@ -82,6 +76,12 @@ export const Skill_data = [
       width: 86,
       height: 80,
     },
+    {
+      skill_name: "Java",
+      Image: "/java_new.svg",
+      width: 87,
+      height: 80,
+    },
   ];
   
   export const Backend_skill = [
@@ -89,7 +89,7 @@ export const Skill_data = [
     {
       skill_name: "PostgreSQL",
       Image: "/postger.png",
-      width: 80,
+      width: 77,
       height: 80,
     },
     {
@@ -108,6 +108,12 @@ export const Skill_data = [
       skill_name: "Selenium",
       Image: "/selenium.svg",
       width: 86,
+      height: 80,
+    },
+    {
+      skill_name: "Framer",
+      Image: "/framer_new.svg",
+      width: 80,
       height: 80,
     },
   ];
