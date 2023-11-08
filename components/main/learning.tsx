@@ -9,9 +9,9 @@ interface Goal {
 }
 
 const goals: Goal[] = [
-  { title: "C#/.NET Kurs (freeCodeCamp)", progress: 70 },
+  { title: "C#/.NET Kurs (freeCodeCamp)", progress: 80 },
   { title: "Docker (freeCodeCamp)", progress: 10 },
-  { title: "Clean Code von Robert C. Martin (Buch)", progress: 40 },
+  { title: "Clean Code von Robert C. Martin (Buch)", progress: 50 },
 ];
 
 const Portfolio: React.FC = () => {
