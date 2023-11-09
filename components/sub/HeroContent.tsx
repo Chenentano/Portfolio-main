@@ -22,14 +22,16 @@ const FloatingLink = () => {
     controls.start(floatingAnimation);
   }, [controls]);
 
+  
   return (
     <motion.a
-      custom={1} // Benutzerdefinierter Wert, um die Animation zu steuern
-      animate={controls}
-      className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[240px] mx-auto md:mx-0"
-      href="https://www.docdroid.net/scF3QFn"
-      target="_blank"
-      variants={slideInFromLeft(0.5)}
+    custom={1}
+    initial={{ opacity: 0, x: -20 }}
+    animate={{ opacity: 1, x: 0, transition: { delay: 1.5 } }}
+    className="py-3 md:py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] mx-auto md:mx-0"
+    href="https://www.docdroid.net/scF3QFn"
+    target="_blank"
+
     >
       Mein Lebenslauf
     </motion.a>
