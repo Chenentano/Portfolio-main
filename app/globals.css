@@ -129,3 +129,20 @@ html {
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
+
+
+/*response navbar*/
+
+@media (max-width: 768px) {
+  .w-full {
+    padding: 0 10px;
+  }
+
+  .w-500 {
+    display: none;
+  }
+
+  .typewriter h1 {
+    font-size: 1.5rem;
+  }
+}

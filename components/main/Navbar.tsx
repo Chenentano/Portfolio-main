@@ -26,10 +26,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#home"
-          className="h-auto w-auto flex flex-row items-center"
-        >
+        <a href="#home" className="h-auto w-auto flex flex-row items-center">
           <div className="my-rotation">
           <Image
             src="/LockMain.png"
@@ -43,7 +40,7 @@ const Navbar = () => {
             <h1>&#60;helloWorld/&#62;</h1>
           </div>
         </a>
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+        <div className="w-[500px] h-full flex-row items-center justify-between md:mr-20 hidden md:flex">
       <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[20px] rounded-full text-gray-200">
         <motion.a
           href="#home"
