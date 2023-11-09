@@ -136,6 +136,7 @@ html {
 @media (max-width: 768px) {
   .w-full {
     padding: 0 10px;
+    text-align: center;
   }
 
   .w-500 {
@@ -144,5 +145,6 @@ html {
 
   .typewriter h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
 }

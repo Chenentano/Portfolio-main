@@ -26,7 +26,7 @@ const FloatingLink = () => {
     <motion.a
       custom={1} // Benutzerdefinierter Wert, um die Animation zu steuern
       animate={controls}
-      className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+      className="py-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[240px] mx-auto md:mx-0"
       href="https://www.docdroid.net/scF3QFn"
       target="_blank"
       variants={slideInFromLeft(0.5)}
@@ -66,12 +66,12 @@ Derzeit bin ich aktiv auf der Suche nach einer Junior-Position, die mir die Mög
 mich weiterzuentwickeln und meine Fähigkeiten in einem anspruchsvollen Umfeld unter Beweis zu stellen.
         </motion.p>
 
-        <FloatingLink /> {/* Hier wird die FloatingLink-Komponente eingefügt */}
+        <FloatingLink />
       </div>
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center hidden md:flex"
+        className="w-full h-full justify-center items-center hidden md:flex"
       >
         <Image
           src="/mainIconsdark.svg"
